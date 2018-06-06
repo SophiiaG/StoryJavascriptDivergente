@@ -2,7 +2,6 @@ var vid = document.querySelector('#bgvid');
 var playVid = function() {
   vid.play();
 }
-
 window.onload = playVid;
 
 var myText = document.querySelector('.body');

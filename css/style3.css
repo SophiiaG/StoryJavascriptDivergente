@@ -1,5 +1,11 @@
+@font-face {
+ font-family: "Roboto", sans-serif;
+ src: url("font/Roboto-Regular.ttf") format("ttf"),
+}
 body {
   overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15;
 }
 .holder {
   width: 250px;

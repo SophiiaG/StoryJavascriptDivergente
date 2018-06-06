@@ -1,5 +1,13 @@
+@font-face {
+ font-family: "Roboto", sans-serif;
+ src: url("font/Roboto-Regular.ttf") format("ttf"),
+}
+
 .body{
-  background-color: #000;
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15;
+
 }
 .divergenteLogo{
   height: 50px;
