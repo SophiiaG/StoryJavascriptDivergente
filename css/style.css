@@ -1,0 +1,40 @@
+
+.body{
+  background-color: #000;
+}
+video#bgvid {
+  position: fixed;
+  margin: 0 auto;
+  top:0;
+  left:0;
+  right: 20%;
+  height: 100vh;
+  /* background: url(img/divergente.mp4); */
+  background-size: cover;
+}
+.welcome{
+  z-index: 3;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+}
+.welcomeText{
+  color: #fff;
+  margin-top: 7%;
+  margin-left: 59%;
+  margin-bottom: 8%;
+}
+.startButton{
+  color: #fff;
+  margin-top: 20%;
+  margin-left: 68%;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 40px;
+  background-image: linear-gradient(to right bottom, #3f8fd7, #329ada, #2ca5db, #32afda, #40b8d9);
+}
+.divergenteLogo{
+  height: 80px;
+  margin-top: 10%;
+  margin-left: 55%;
+}

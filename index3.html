@@ -1,0 +1,185 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/style3.css">
+  <title>Document</title>
+</head>
+
+<body class="body">
+  <a href="index.html">
+  <img class="divergenteLogo"  src="img/logo.png" alt="logo">
+  </a>
+  <h1 class="title">Chapitre 3</h1>
+  <h5 class="choose">Etape 1</h3>
+  <p class="article-content">
+    Première étape de votre mission, vous devez vous rendre chez les Altruistes pour sauver les parents de Tris. Son père, Andrew, est au service du conseil dirigeant avec le responsable des Altruistes, Marcus Eaton. Ils pourront vous aidez à vous fournir
+    une fiole de sérum. Elle vous sera utile pour la suite de votre mission.
+  </p>
+  <div class="articleResponse">
+    <a class="response btns-factions btnLeft" href="#">Je me rend chez les Altruistes</a>
+    <a class="response btns-factions btnRight" href="#">Je décide d’aller au centre de contrôle seul</a>
+  </div>
+  <audio class="audio">
+  <source src="" type="audio/mp3">
+    La musique ne fonctionne pas.
+  </audio>
+  <div class="holder1">
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+	<div class="circle1"></div>
+  </div>
+
+  <div class="holder">
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+  </div>
+  <script src="data.js"></script>
+  <script type="text/javascript">
+
+        var dom = {
+          title:document.querySelector('.title'),
+          choose:document.querySelector('.choose'),
+          right: document.querySelector('.btnRight'),
+          left: document.querySelector('.btnLeft'),
+          article:document.querySelector('.article-content'),
+          loose1:document.querySelector('.holder1'),
+          won:document.querySelector('.holder'),
+        }
+
+        function changeValueLeft(){
+        for (let i = 0; i <= 0; i++) {
+          dom.left.addEventListener('click', function(){
+             if (dom.left.textContent == 'J’injecte le sérum à Eric et lui ordonne d’arrêter pour sauver les parents de Tris et je me rend au centre de contrôle') {
+              dom.left.textContent = data.content[2].link1;
+              dom.right.textContent = data.content[2].link2;
+              dom.title.textContent = data.content[2].title;
+              dom.choose.textContent = data.content[2].choose;
+              dom.article.textContent = data.content[2].text;
+            } else if (dom.left.textContent == 'J’ai récupéré l’arme d’Eric, je la menace avec') {
+              dom.left.remove();
+              dom.right.remove();
+              dom.title.textContent = data.content[6].title;
+              dom.choose.remove();
+              dom.article.textContent = data.content[6].text;
+              dom.won.style.display = 'block';
+            } else if (dom.left.textContent == 'Je me faufile dans les conduit d’aération pour atteindre la salle de commandement') {
+              dom.left.textContent = data.content[4].link1;
+              dom.right.textContent = data.content[4].link2;
+              dom.title.textContent = data.content[4].title;
+              dom.choose.textContent = data.content[4].choose;
+              dom.article.textContent = data.content[4].text;
+            } else if (dom.left.textContent == 'Je l’assomme avec un ordinateur que je trouve dans la salle ') {
+              dom.left.remove();
+              dom.right.remove();
+              dom.title.textContent = data.content[8].title;
+              dom.choose.remove();
+              dom.article.textContent = data.content[8].text;
+              dom.loose1.style.display = 'block';
+            }
+            else if (dom.left.textContent == 'J’utilise un échantillon du sérum de contrôle d’esprit sur Jeannine, pour la forcer à supprimer son programme ') {
+              dom.left.remove();
+              dom.right.remove();
+              dom.title.textContent = data.content[6].title;
+              dom.choose.remove();
+              dom.article.textContent = data.content[6].text;
+              dom.won.style.display = 'block';
+            }  else {
+              dom.left.textContent = data.content[0].link1;
+              dom.right.textContent = data.content[0].link2;
+              dom.title.textContent = data.content[0].title;
+              dom.choose.textContent = data.content[0].choose;
+              dom.article.textContent = data.content[0].text;
+            }
+            i++
+          });
+        }
+        }
+        changeValueLeft()
+
+  function changeValueRight(){
+        for (let i = 0; i <= 0; i++) {
+          dom.right.addEventListener('click',function(){
+             if (dom.right.textContent == 'J’abandonne le centre de contrôle est trop gardé,je monte dans un train de la ville pour une destination inconnue.') {
+              dom.left.remove();
+              dom.right.remove();
+              dom.title.textContent = data.content[5].title;
+              dom.choose.remove();
+              dom.article.textContent = data.content[5].text;
+              dom.loose1.style.display = 'block';
+            } else if (dom.right.textContent == 'Je récupère le sérum et je me rend au centre de contrôle. Sachant que je condamne les parent de Tris') {
+              dom.left.textContent = data.content[3].link1;
+              dom.right.textContent = data.content[3].link2;
+              dom.title.textContent = data.content[3].title;
+              dom.choose.textContent = data.content[3].choose;
+              dom.article.textContent = data.content[3].text;
+            }  else if (dom.right.textContent == 'Je l’assomme avec un ordinateur que je trouve dans la salle') {
+              dom.left.remove();
+              dom.right.remove();
+              dom.title.textContent = data.content[8].title;
+              dom.choose.remove();
+              dom.article.textContent = data.content[8].text;
+              dom.loose1.style.display = 'block';
+            } else if (dom.right.textContent == 'Je décide de bluffer et menace de la tuer en simulant le fait de possédé une arme ') {
+              dom.left.remove();
+              dom.right.remove();
+              dom.title.textContent = data.content[8].title;
+              dom.choose.remove();
+              dom.article.textContent = data.content[8].text;
+              dom.loose1.style.display = 'block';
+            } else if (dom.right.textContent == 'Je la tue à l’aide de l’arme d’Eric') {
+              dom.left.remove();
+              dom.right.remove();
+              dom.title.textContent = data.content[7].title;
+              dom.choose.remove();
+              dom.article.textContent = data.content[7].text;
+              dom.loose1.style.display = 'block';
+            } else {
+              dom.left.textContent = data.content[1].link1;
+              dom.right.textContent = data.content[1].link2;
+              dom.title.textContent = data.content[1].title;
+              dom.choose.textContent = data.content[1].choose;
+              dom.article.textContent = data.content[1].text;
+            }
+            i++
+          });
+        }
+        }
+        changeValueRight();
+
+
+  </script>
+</body>
+</html>

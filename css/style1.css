@@ -1,0 +1,69 @@
+.body{
+  background-color: #000;
+}
+.divergenteLogo{
+  height: 50px;
+  margin-top: 2%;
+  margin-left: 1%;
+}
+.title{
+  color: #fff;
+  width: 15%;
+  margin: 0 auto;
+  font-size: 37px;
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+.choose{
+  color: #fff;
+  width: 10%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 45px;
+}
+.article-content{
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.btns-factions{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  text-decoration: none;
+}
+.links{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.pictures{
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+}
+.articleResponse{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 68%;
+}
+.response{
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 15px;
+  border-radius: 40px;
+  background-image: linear-gradient(to right bottom, #3f8fd7, #329ada, #2ca5db, #32afda, #40b8d9);
+  width: 40%;
+}
+.tryAgain{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
