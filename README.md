@@ -12,5 +12,5 @@ Bienvenue à Chicago en 2154! Nous avons une mission à te confier, choisi ta fa
 Pour lancer le projet sur ta machine, ouvre ton terminal, clone le projet et lance un server local, par exemple:
 
 ```
-php-S localhost:8000
+php -S localhost:8000
 ```
