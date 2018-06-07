@@ -75,3 +75,10 @@
   margin: 0 auto;
   justify-content: center;
 }
+.retryAgain{
+  width: 20%;
+  display: flex;
+  margin: 0 auto;
+  margin-right: 140px;
+  justify-content: center;
+}
