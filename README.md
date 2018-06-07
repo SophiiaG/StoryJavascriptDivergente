@@ -1,7 +1,7 @@
 
-# StoryJavascriptDivergente
+# StoryJavascriptDivergent
 
-Aujourd'hui je vous propose de vous immergez dans le film divergente avec mon histoire intéractive!
+Aujourd'hui je vous propose de vous immerger dans le film divergent avec mon histoire intéractive!
 
 ![alttext](https://github.com/SophiiaG/StoryJavascriptDivergente/blob/master/img/logo.png)
 
@@ -14,3 +14,9 @@ Pour lancer le projet sur ta machine, ouvre ton terminal, clone le projet et lan
 ```
 php -S localhost:8000
 ```
+
+* __Membres :__
+
+
+Sophia Gounani
+Jean-Yves Dogo 
