@@ -18,5 +18,4 @@ php -S localhost:8000
 * __Membres :__
 
 
-Sophia Gounani /
-Jean-Yves Dogo 
+Sophia Gounani  
